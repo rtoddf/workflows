@@ -18,3 +18,5 @@ Git repo: ?.git
 
 Git init
 
+npm install --save-dev gulp
+
