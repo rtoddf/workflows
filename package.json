@@ -4,11 +4,16 @@
   "description": "A project to learn workflows",
   "repository": {
     "type": "git",
-    "url": "?.git"
+    "url": "https://github.com/rtoddf/workflows.git"
   },
   "author": "R. Todd Fleeman",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-util": "^3.0.8"
+    "gulp-browserify": "^0.5.1",
+    "gulp-coffee": "^2.3.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-util": "^3.0.8",
+    "handlebars": "^4.0.10",
+    "jquery": "^3.2.1"
   }
 }
