@@ -1,4 +1,7 @@
 http://sass-lang.com/
+	style: https://web-design-weekly.com/2014/06/15/different-sass-output-styles/
+	config.rb: https://gist.github.com/nathansmith/1179395
+
 http://compass-style.org/
 https://gulpjs.com/
 http://browserify.org/
