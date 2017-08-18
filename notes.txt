@@ -4,3 +4,17 @@ https://gulpjs.com/
 http://browserify.org/
 http://coffeescript.org/
 http://handlebarsjs.com/
+
+Node
+npm
+Gulp
+Browserify 
+Ruby (already installed)
+Gem update
+gem install sass
+
+Npm init
+Git repo: ?.git
+
+Git init
+
