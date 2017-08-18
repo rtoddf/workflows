@@ -1,0 +1,6 @@
+http://sass-lang.com/
+http://compass-style.org/
+https://gulpjs.com/
+http://browserify.org/
+http://coffeescript.org/
+http://handlebarsjs.com/
