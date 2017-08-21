@@ -30,11 +30,12 @@ Git init
 
 npm install --save-dev gulp
 
+what does compass/reset actually do?????
 
 
 
 gulp watch
-
+gulp connect page
 
 
 
