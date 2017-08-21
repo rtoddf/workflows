@@ -11,7 +11,7 @@ var coffeeSrcs = ['components/coffee/tagline.coffee'],
 		'components/scripts/tagline.js',
 		'components/scripts/template.js'
 	],
-	sassSrcs = ['components/sass/base.scss'],
+	sassSrcs = ['components/sass/style.scss'],
 	sassDest = 'builds/development/css'
 
 // gulp.task('log', function(){
@@ -45,7 +45,7 @@ gulp.task('compass', function(){
 
 })
 
-
+gulp.task('default', ['coffee', 'js', 'compass'])
 
 
 
