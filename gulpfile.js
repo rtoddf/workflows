@@ -45,7 +45,7 @@ gulp.task('compass', function(){
 
 })
 
-gulp.task('default', ['coffee', 'js', 'compass'])
+gulp.task('default', ['coffee', 'js', 'compass', 'watch'])
 
 
 gulp.task('watch', function(){
