@@ -39,7 +39,7 @@ gulp connect page
 
 
 
-
+lazy loading images: http://blog.dynamicdrive.com/5-brilliant-ways-to-lazy-load-images-for-faster-page-loads/
 
 
 
