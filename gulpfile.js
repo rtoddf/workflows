@@ -13,7 +13,9 @@ var coffeeSrcs = ['components/coffee/tagline.coffee'],
 		'components/scripts/template.js'
 	],
 	sassSrcs = ['components/sass/style.scss'],
-	sassDest = 'builds/development/css'
+	sassDest = 'builds/development/css',
+	htmlSrcs = ['builds/development/*.html'],
+	jsonSrcs = ['builds/development/scripts/*.json']
 
 // gulp.task('log', function(){
 // 	gutil.log('workflows are awesome');
@@ -47,13 +49,15 @@ gulp.task('compass', function(){
 		.pipe(connect.reload())
 })
 
-gulp.task('default', ['coffee', 'js', 'compass', 'connect', 'watch'])
+gulp.task('default', ['html', 'json', 'coffee', 'js', 'compass', 'connect', 'watch'])
 
 
 gulp.task('watch', function(){
 	gulp.watch(coffeeSrcs, ['coffee'])
 	gulp.watch(jsSrcs, ['js'])
 	gulp.watch('components/sass/*.scss', ['compass'])
+	gulp.watch(htmlSrcs, ['html'])
+	gulp.watch(jsonSrcs, ['json'])
 })
 
 gulp.task('connect', function(){
@@ -63,7 +67,15 @@ gulp.task('connect', function(){
 	})
 })
 
+gulp.task('html', function(){
+	gulp.src(htmlSrcs)
+		.pipe(connect.reload())
+})
 
+gulp.task('json', function(){
+	gulp.src(jsonSrcs)
+		.pipe(connect.reload())
+})
 
 
 
