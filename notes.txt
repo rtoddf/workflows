@@ -30,3 +30,14 @@ Git init
 
 npm install --save-dev gulp
 
+gulp tasks
+
+array of tasks you want to run before the main one "js"
+gulp.task('js', ['coffee'], function(){
+	....
+})
+
+gulp.task('default', ['coffee', 'js', 'compass'])
+gulp all - runs tasks in sequence
+just run gulp - default is the default
+
