@@ -41,3 +41,14 @@ gulp.task('default', ['coffee', 'js', 'compass'])
 gulp all - runs tasks in sequence
 just run gulp - default is the default
 
+what does compass/reset actually do?????
+
+
+
+gulp watch
+gulp connect page
+
+
+
+lazy loading images: http://blog.dynamicdrive.com/5-brilliant-ways-to-lazy-load-images-for-faster-page-loads/
+
