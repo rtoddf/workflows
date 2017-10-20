@@ -8,7 +8,9 @@ var gulp = require('gulp'),
 
 var coffeeSrcs = ['components/coffee/tagline.coffee'],
 	coffeeDest = 'components/scripts',
+	babel = require('gulp-babel'),
 	jsSrcs = [
+		'components/scripts/es6.js',
 		'components/scripts/tagline.js',
 		'components/scripts/template.js'
 	],
@@ -31,6 +33,9 @@ gulp.task('coffee', function(){
 
 gulp.task('js', function(){
 	gulp.src(jsSrcs)
+		.pipe(babel({
+            presets: ['env']
+        }))
 		.pipe(concat('script.js'))
 		.pipe(browserify())
 		.pipe(gulp.dest('builds/development/scripts'))
