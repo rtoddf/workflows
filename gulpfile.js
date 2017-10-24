@@ -9,11 +9,12 @@ var gulp = require('gulp'),
 var coffeeSrcs = ['components/coffee/tagline.coffee'],
 	coffeeDest = 'components/scripts',
 	babel = require('gulp-babel'),
-	jsSrcs = [
-		'components/scripts/es6.js',
-		'components/scripts/tagline.js',
-		'components/scripts/template.js'
-	],
+	jsSrcs = ['components/scripts/*.js'],
+		// 'components/scripts/es6.js',
+	// 	'components/scripts/functions.js',
+	// 	'components/scripts/tagline.js',
+	// 	'components/scripts/template.js'
+	// ],
 	sassSrcs = ['components/sass/style.scss'],
 	sassDest = 'builds/development/css',
 	htmlSrcs = ['builds/development/*.html'],

@@ -1,49 +1,53 @@
 // maps
-var course = new Map();
+// var course = new Map();
 
-course.set('react', {description: 'ui'});
-course.set('jest', {description: 'testing'});
+// course.set('react', {description: 'ui'});
+// course.set('jest', {description: 'testing'});
 
-console.log(course);
-console.log(course.react);
-console.log(course.get('react'));
+// console.log(course);
+// console.log(course.react);
+// console.log(course.get('react'));
 
-var details = new Map([
-	[new Date(), 'today'],
-	['items', [1, 2]]
-]);
+// var details = new Map([
+// 	[new Date(), 'today'],
+// 	['items', [1, 2]]
+// ]);
 
-console.log(details.size);
-details.forEach(function(item){
-	console.log(item);
-});
+// console.log(details.size);
+// details.forEach(function(item){
+// 	console.log(item);
+// });
 
 
 //sets - colletions of values, but each must be unique
 //duplicates are removed
-var books = new Set();
-books.add('It')
-	.add('The Stand')
-	.add('Misery');
+// var books = new Set();
+// books.add('It')
+// 	.add('The Stand')
+// 	.add('Misery');
 
-console.log('books size: ', books.size);
-console.log('has It: ', books.has('It'));
+// console.log('books size: ', books.size);
+// console.log('has It: ', books.has('It'));
 
 //for of loop
-var topics = new Map([
-	['HTML', '/class/html'],
-	['CSS', '/class/css'],
-	['Javascript', '/class/javascript'],
-	['Node', '/class/node']
-]);
+// var topics = new Map([
+// 	['HTML', '/class/html'],
+// 	['CSS', '/class/css'],
+// 	['Javascript', '/class/javascript'],
+// 	['Node', '/class/node']
+// ]);
 
-for(let topic of topics.keys()){
-	console.log('key: ', topic)
-}
+// for(let topic of topics.keys()){
+// 	console.log('key: ', topic)
+// }
 
-for(let topic of topics.values()){
-	console.log('value: ', topic)
-}
+// for(let topic of topics.values()){
+// 	console.log('value: ', topic)
+// }
+
+// for (let course of topics.entries()){
+// 	console.log('course: ', course)
+// }
 
 // $ npm install --save-dev gulp-babel babel-preset-env
 // npm install --save-dev babel-core
